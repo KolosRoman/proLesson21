@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+div,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 1320px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(228, 214, 196);
+    /* display: grid;
+    grid-template-columns: 350px 1fr; */
+}
+
+.user-container {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.user-block {
+    /* display: flex; */
+    padding-top: 10px;
+}
+
+.page {
+    /* width: 95%; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.page-email {
+    padding: 10px 0;
+}
+
+.active {
+    display: none;
+}
+
+.button-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 90px;
+    height: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: brown;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+
+.button:hover {
+    background-color: rgb(241, 15, 15);
+}
+
+.button:active {
+    top: 3px;
+}
+
+.error {
+    height: 14px;
+    color: red;
+    font-size: 12px;
+}
+
+.new-users-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.add-user {
+    padding: 10px 20px;
+    background-color: aqua;
+}
+
+.add-user-title {
+    padding-bottom: 10px;
+}
+
+
+.user-input {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    margin: 5px 0 5px 0;
+}
+
+/* .button.add-button {
+    width: 100%;
+    height: 30px;
+} */
+
+.new-users-block {
+    border: 1px solid black;
+}
+
+.new-users-title {
+    text-align: center;
+}
+
+.create-users {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(241, 241, 76);
+    font-weight: 700;
+}
+
+.newCard {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.correct {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+.form {
+    width: 450px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: grid;
+    grid-row-gap: 5px;
+}
+
+.form-label {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.form-input {
+    height: 40px;
+    padding-left: 7px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #ffffff;
+    outline: none;
+    border: 0.5px solid gray;
+    transition: all 0.5s ease 0s;
+}
+
+.form-input:focus {
+    box-shadow: 0 0 5px rgb(10, 108, 253);
+}
+
+.form-input-error {
+    box-shadow: 0 0 10px red;
+}
+
+.button.button-login {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: brown;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    position: relative;
+    top: 0;
+}
+
+.button.button-login:hover {
+    background-color: rgb(83, 12, 12);
+}
+
+.button.button-login:active {
+    top: 3px;
+}
+
+.error-message-container {
+    width: 100%;
+    height: 40px;
+}
+
+.error-message, .user-undefined {
+    color: red;
+    padding-left: 5px;
+}
+
+.wrong-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wrong-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrong-block {
+    width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+.wrong-button {
+    width: 70px;
+    cursor: pointer;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Lesson21</title>
+    <script src="./script.js" type="module" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="user-container">
+            <div id="user-block" class="user-block">
+                <div id="page1" class="page">
+
+                </div>
+                <div id="page2" class="page">
+                    
+                </div>
+                <div>
+                    <button type="button" id="button-exit" class="button">Exit</button>
+                </div>
+            </div>
+            <div class="button-block">
+                <button type="button" id="button-previous" class="button">Prev</button>
+                <button type="button" id="button-next" class="button">Next</button>
+            </div>
+        </div>
+        <div class="new-users-container">
+            <div class="add-user">
+                <form action="#">
+                    <h3 class="add-user-title">Додати нового користувача</h2>
+                    <p id="error" class="error"></p>
+                    <div>
+                        <label class="new-user">Ім'я</label>
+                        <input type="text" id="user-name" name="user-name" class="user-input">
+                    </div>
+                    <div class="">
+                        <label class="new-user">Прізвище</label>
+                        <input type="text" id="surname" name="surname" class="user-input">
+                    </div>
+                    <div>
+                        <label class="new-user">Пошта</label>
+                        <input type="text" id="email" name="email" class="user-input">
+                    </div>
+                    <div class="">
+                        <label class="new-user">Робота</label>
+                        <input type="text" id="job" name="job" class="user-input">
+                    </div>
+                    <div class="">
+                        <label class="new-user">Оновити/видалити користувача введіть id</label>
+                        <input type="text" id="id-number" name="job" class="user-input">
+                    </div>
+                    <button type="button" id="add-button" class="button">Додати</button>
+                    <button type="button" id="update-button" class="button">Обновити</button>
+                    <button type="button" id="delete-button" class="button">Видалити</button>
+                </form>
+            </div>
+            <div class="new-users-block">
+                <h2 class="new-users-title">Нові користувачі</h2>
+                <div class="create-users">
+                    <p>ID</p>
+                    <p>Ім'я та прізвище</p>
+                    <p>Пошта</p>
+                    <p>Робота</p>
+                </div>
+                <div id="create-users">
+
+                </div>
+
+            </div>
+        </div>
+        <div id="form-container" class="form-container">
+            <form id="form" class="form">
+                <h2 class="form-title">
+                    Зареєструватись
+                </h2>
+                <div class="error-message-container">
+                    <p id="user-undefined" class="user-undefined"></p>
+                </div>
+                <div>
+                    <label class="form-label">Введіть логін</label>
+                    <input id="login" type="text" class="form-input" name="login">
+                    <div class="error-message-container">
+                        <p id="error-message-login" class="error-message"></p>
+                    </div>
+                </div>
+                <div>
+                    <label class="form-label">Введіть пароль</label>
+                    <input id="password" type="text" class="form-input" name="password" placeholder="більше 6 символів">
+                    <div class="error-message-container">
+                        <p id="error-message-password" class="error-message"></p>
+                    </div>
+                </div>
+                <button id="button-login" class="button button-login">Логін</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
